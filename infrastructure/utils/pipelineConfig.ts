@@ -21,6 +21,8 @@ export const pipelineConfig = (env: string) => {
       githubToken: parsed?.GITHUB_TOKEN,
       workspaceId: parsed?.WORKSPACE_ID,
       channelId: parsed?.CHANNEL_ID,
+      owner: '',
+      repo: '',
       ...webConfigJSON,
     };
   }
@@ -35,6 +37,8 @@ export const pipelineConfig = (env: string) => {
     githubToken: parsed?.GITHUB_TOKEN,
     workspaceId: parsed?.WORKSPACE_ID,
     channelId: parsed?.CHANNEL_ID,
+    owner: '',
+    repo: '',
     ...webConfigJSON,
   };
 };
